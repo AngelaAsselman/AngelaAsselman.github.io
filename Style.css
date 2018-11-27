@@ -95,12 +95,13 @@ nav a:hover {
 .pictures img {
     width: 450px;
     height: 450px;
-    transition: all 3s;
+    transition: all 1s;
     padding: 10px;
 }
 
 .pictures img:hover{
     transform: scale(1.5);
+    z-index: 1;
 }
 
 footer {
