@@ -16,18 +16,21 @@ header {
     padding: 20px;
 }
 
-header h1 {
-    font-size: 600%;
-    text-align: center;
-}
+.header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} 
 
-header h2 {
-    font-size: 150%;
+.header h1 {
+    font-size: 6rem;
     text-align: center;
-}
-
-h1 {
-    margin-top: 150px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 nav {
@@ -39,8 +42,11 @@ nav {
     display: flex;
     text-transform: uppercase;
     margin-top: 10px;
-
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
+ 
 
 nav ul {
     margin: 0;
@@ -53,7 +59,8 @@ nav li {
     display: inline-block;
 }
 
- /* style of hyperlinks in navigation pane */
+/* style of hyperlinks in navigation pane */
+
 nav a:link{
     cursor: pointer;
     display: block;
@@ -65,6 +72,7 @@ nav a:link{
 }
 
 /* changing color of nav item when hovering cursor on it */
+
 nav a:hover {
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -77,38 +85,49 @@ nav a:hover {
     background-color: rgb(177, 202, 119);
 }
 
+
 .gallery {
+    max-width: 50%;
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-    justify-content: center;
-    align-content: center;
+    margin: auto;
+    background-color: black;
 }
+
+ 
 
 .pictures {
-    max-width: 1500px;
-    padding: 0px 4px;
-
+    display: flex;
+    text-align: center;
+    align-content: center;
+    flex-flow: row wrap;
 }
+
+ 
 
 .pictures img {
-    width: 450px;
-    height: 450px;
-    transition: all 1s;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    transition: all 0.1s;
+    margin: auto;
     padding: 10px;
 }
+ 
 
 .pictures img:hover{
     transform: scale(1.5);
     z-index: 1;
 }
+ 
 
 footer {
     background-color: rgb(254, 254, 252);
     display: block;
     width: 100%;
     padding: 0px 0px 0px 0px;
-    margin-top: 10px; 
+    margin-top: 10px;
     text-align: center;
     color: rgb(177, 202, 119);
     display: inline-block;
