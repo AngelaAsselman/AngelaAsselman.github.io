@@ -80,7 +80,7 @@ nav a:hover {
 }
 
 .active {
-    color: rgb(0, 0, 0);
+    color: black;
     font-weight: bold;
     background-color: rgb(177, 202, 119);
 }
